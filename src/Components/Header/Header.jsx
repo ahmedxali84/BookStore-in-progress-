@@ -9,7 +9,6 @@ const Header = () => {
       <div className="container header-container">
                 <div className="logo">
           <img src="https://via.placeholder.com/40x40/4a6fa5/ffffff?text=NN" alt="NovelNest Logo" />
-          <h1>Novel<span>Nest</span></h1>
         </div>
         <nav>
           <ul>
