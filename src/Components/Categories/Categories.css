@@ -1,0 +1,54 @@
+/* components/Categories/Categories.css */
+.categories {
+    padding: 80px 0;
+    background-color: white;
+  }
+  
+  .categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .category-card {
+    background-color: var(--light);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .category-img {
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  .category-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .category-info {
+    padding: 15px;
+  }
+  
+  .category-info h3 {
+    margin-bottom: 5px;
+    color: var(--secondary);
+  }
+  
+  .category-info p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 576px) {
+    .categories-container {
+      grid-template-columns: 1fr;
+    }
+  }
